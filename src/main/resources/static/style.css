@@ -1,0 +1,139 @@
+.timer-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.zoom {
+  margin: auto;
+  width: 150px;
+  text-align: center;
+  font-size: 150px;
+  color: red;
+  opacity: 0;
+
+  animation: zoom-fade 1s ease infinite;
+}
+
+@keyframes zoom-fade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+}
+
+body {
+  text-align: center;
+}
+#messages {
+  width: 510px;
+  margin: auto;
+  border: 1px solid black;
+  height: 300px;
+  overflow-y: scroll;
+}
+input {
+  width: 400px;
+  height: 50px;
+  font-size: large;
+}
+
+button {
+  width: 100px;
+  height: 55px;
+  background-color: green;
+  color: white;
+  font-size: large;
+}
+
+.alerts {
+  width: 510px;
+  margin: auto;
+}
+
+.alert {
+  width: 100%;
+  margin: 10px auto;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid red;
+  color: red;
+  text-transform: capitalize;
+  animation: zoom-out 1s ease-in-out;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.close {
+  float: right;
+  color: red;
+}
+
+.message-div{
+    border: 1px solid green;
+    padding: 10px;
+    min-width: 100px;
+    text-align: left;
+    position: relative;
+}
+
+.message-text{
+    font-size: larger;
+}
+
+.cover{
+    padding-top: 10px;
+}
+
+.left{
+    display: flex;
+    justify-content: left;
+}
+.right{
+    display: flex;
+    justify-content: right;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+}
+
+.username{
+    text-transform: uppercase;
+    font-size: xx-small;
+    display: block;
+    font-weight: bolder;
+}
+
+.message-alert{
+    color: green;
+    width: 90%;
+    margin: 10px auto;
+
+}
+
+#dont{
+    float: right;
+}
+

@@ -1,0 +1,33 @@
+
+.arena{
+    margin-top: 10;
+    text-align: left;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+.name{
+    color: rgb(64, 2, 88);
+    display: block;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+img{
+    width: 200px;
+}
+
+.image-left{
+    transform: rotate(-270deg);
+}
+.image-right{
+    transform: rotate(270deg);
+}
+
+.title{
+    text-transform: capitalize;
+}
+
+
+
