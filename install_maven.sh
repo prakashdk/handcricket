@@ -3,5 +3,4 @@ sudo wget https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-ma
 sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
 sudo yum install -y apache-maven
 sudo yum install java-1.8.0-devel -y
-cd video-chat
 mvn spring-boot:run
